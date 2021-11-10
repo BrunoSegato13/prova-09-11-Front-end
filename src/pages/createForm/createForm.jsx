@@ -52,7 +52,7 @@ const CreateForm = () => {
               onChange={handleChange}
             />
           </Form.Group>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Group className="mb-3">
             <Form.Label className="col-sm-12">Telefone</Form.Label>
             <InputMask
               className="col-sm-12"
