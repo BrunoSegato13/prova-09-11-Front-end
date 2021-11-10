@@ -31,7 +31,7 @@ test("should send a contac to create and expect api is called", async () =>{
 
   fireEvent.change(nameElement, { target: { value: "Teste"}});
   fireEvent.change(emailElement, { target: { value: "teste@teste.com"}});
-  fireEvent.change(phoneElement, { target: { value: "2021-02-10"}});
+  fireEvent.change(phoneElement, { target: { value: "4500000000"}});
   fireEvent.click(button); 
 
   expect(nameElement).toBeInTheDocument();
