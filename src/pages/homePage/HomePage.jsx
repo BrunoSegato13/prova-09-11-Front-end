@@ -27,6 +27,7 @@ const HomePage = () => {
       <Row className="justify-content-end mb-2 mt-2">
         <Col >
         <Button as={Link}
+          id="new"
           to="/create"
         >
           Cadastrar Novo
@@ -48,7 +49,7 @@ const HomePage = () => {
           {apiData?.map((data) => (
             <tr>
               <td>{data.name}</td>
-              <td>{data.email}</td>
+              <td id={`email-${data.id}`}>{data.email}</td>
               <td>{data.phone}</td>
               <td>
                   <Button 
@@ -60,7 +61,7 @@ const HomePage = () => {
                   </Button>
               </td>
               <td>
-              <Button variant="danger" onClick={() => onDelete(data.id)}>Deletar</Button>
+              <Button id={`delete-${data.id}`}variant="danger" onClick={() => onDelete(data.id)}>Deletar</Button>
               </td>
             </tr>
             ))

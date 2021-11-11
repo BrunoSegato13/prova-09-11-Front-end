@@ -61,7 +61,8 @@ const CreateForm = () => {
               type="tel"
               name="phone"
               onChange={handleChange}
-              mask="(99)99999-9999"/>
+              // mask="(99)99999-9999"
+              />
           </Form.Group>
           <Button id="save" variant="success" type="submit">
             Salvar

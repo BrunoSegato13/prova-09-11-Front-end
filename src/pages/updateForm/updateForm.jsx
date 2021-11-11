@@ -72,7 +72,8 @@ const UpdateForm = () => {
               name="phone"
               value={apiData.phone}
               onChange={handleChange}
-              mask="(99)99999-9999"/>
+              // mask="(99)99999-9999"
+              />
           </Form.Group>
           <Button variant="success" type="submit">
             Atualizar
